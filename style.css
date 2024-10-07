@@ -1,0 +1,149 @@
+html,body{
+    font-family: "Overpass", sans-serif;
+    font-weight: 100;
+}
+body{
+    background-color: hsl(216, 12%, 8%) ;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    height: auto;
+    width: 400px;
+    border-radius: 30px;
+
+}
+.container img{
+    background-color: hsl(215, 17%, 14%)     ;
+    padding: 15px;
+    border-radius: 50%;
+}
+.container .content .para{
+    opacity: 70%;
+}
+.container .rating p{
+    background-color: hsl(215, 22%, 17%) ;
+    padding: 10px;
+    width: 20px;
+    height: 20px;     
+    border-radius: 50%;
+    display: flex;              
+    justify-content: center;   
+    align-items: center;  
+    cursor: pointer;
+}
+.container .rating p:hover{
+    background-color:  hsl(25, 97%, 53%);
+}
+.container .rating p.clicked{
+background-color: aliceblue;
+color:  hsl(215, 22%, 17%);
+font-weight: 800;
+}
+.container .rating{
+    display: flex;
+    justify-content: space-around;
+
+}
+.container .submit{
+   
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.container .submit{
+    background-color: hsl(25, 97%, 53%);
+    width: 90%;
+    padding: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.container .submit:hover{
+    background-color: white;
+    color:  hsl(215, 22%, 17%) ;
+}
+
+
+/* thank you bage */
+.container1{
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    height: auto;
+    width: 400px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container1 img{
+    padding: 20px;
+}
+.container1 .point{
+    color: hsl(25, 97%, 53%);
+    font-weight: 100;
+    padding: 15px;
+    background-color:  hsl(219, 18%, 15%);
+    border-radius: 20px;
+    display: flex;
+}
+.container1 .paracont{
+    opacity: 70%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+@media (max-width: 435px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .container {
+        width: 70%;
+        padding: 20px;
+    }
+    .container1{
+        width:75%;
+        padding: 20px;
+    }
+
+    .container img {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .container .rating p {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .container .submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
